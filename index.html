@@ -1,0 +1,52 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      position: absolute;
+      left: 40%;
+      transform: translate(-40%, 40%);
+      display: flex;
+      flex-direction: column;
+    }
+    #guess-value {
+      background-color: purple;
+      color: #fff;
+    }
+
+    .rules {
+      display: flex;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div>
+        <h1>
+          Guess karo number
+        </h1>
+        <form>
+          <input
+            type="number"
+            name=""
+            id="input"
+            placeholder="Guess a number"
+          />
+
+          <button type="submit" id="guess-value">Submit</button>
+        </form>
+      </div>
+      <span id="message"></span>
+
+      <div class="rules">
+        <span>1) System 1 se 10 ke beech ek random number generate kara</span>
+        <span>2) Guess karke dikhao 3 chance me</span>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
